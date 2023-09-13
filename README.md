@@ -1,4 +1,4 @@
-# Checkbox
+# Apex_item.
 
 Bem-vindo(a) ao uso do apex_item.checkbox! Nesta introdução, vamos explorar o que é o apex_item.checkbox e como utilizá-lo em suas aplicações Oracle Application Express (APEX).<br>
 
