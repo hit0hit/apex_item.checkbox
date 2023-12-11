@@ -5,14 +5,14 @@ Bem-vindo(a) ao uso do apex_item.checkbox! Nesta introdução, vamos explorar o 
 O apex_item.checkbox é uma função disponível no Oracle APEX que permite criar caixas de seleção (checkboxes) dinamicamente dentro de relatórios ou formulários. Essa função é especialmente útil quando você precisa exibir uma lista de opções onde o usuário pode escolher uma ou várias alternativas.<br><br>
 
 A sintaxe básica da função apex_item.checkbox é a seguinte:<br>
-<br>
-apex_item.checkbox( <br>
-    p_idx         IN NUMBER,<br>
-    p_value       IN VARCHAR2 DEFAULT NULL,<br>
-    p_attributes  IN VARCHAR2 DEFAULT NULL,<br>
-    p_checked     IN VARCHAR2 DEFAULT NULL<br>
-) RETURN VARCHAR2;<br>
-
+```
+apex_item.checkbox( 
+    p_idx         IN NUMBER,
+    p_value       IN VARCHAR2 DEFAULT NULL,
+    p_attributes  IN VARCHAR2 DEFAULT NULL,
+    p_checked     IN VARCHAR2 DEFAULT NULL
+) RETURN VARCHAR2;
+```
 Aqui estão os principais parâmetros:<br>
 <br>
 p_idx: Obrigatório. É o índice do elemento. Cada checkbox deve ter um índice exclusivo para que os valores selecionados sejam corretamente identificados no lado do servidor.
@@ -27,14 +27,14 @@ Para utilizá-lo, primeiro, você precisa criar um relatório ou formulário em 
 
 Aqui está um exemplo simples de como criar uma coluna de checkbox em um relatório usando a função apex_item.checkbox:<br>
 
-<br>
-SELECT<br>
-    apex_item.checkbox(1) AS select_box,<br>
-    column1,<br>
-    column2<br>
-FROM<br>
-    your_table;<br>
-
+```
+SELECT
+    apex_item.checkbox(1) AS select_box,
+    column1,
+    column2
+FROM
+    your_table;
+```
 
 Neste exemplo, criamos uma coluna chamada "select_box" que conterá os checkboxes. O índice para cada checkbox é definido como 1.<br>
 
